@@ -25,7 +25,7 @@ const ctx = canvas.getContext("2d");
 // ============================
 // SOCKET
 // ============================
-const socket = new WebSocket("ws://localhost:3000");
+const socket = new WebSocket("wss://collaborative-canvas-server.onrender.com");
 
 // ============================
 // RESIZE
