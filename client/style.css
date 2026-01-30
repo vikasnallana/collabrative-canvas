@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+/* Toolbar */
+#toolbar {
+  background-color: #1e1e1e;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Buttons */
+#toolbar button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+#toolbar button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+#toolbar button.active {
+  background-color: #00b894;
+  color: black;
+  font-weight: bold;
+}
+
+/* Canvas */
+canvas {
+  display: block;
+  background-color: white;
+}
+
+/* User Panel */
+#userPanel {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  background: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  min-width: 180px;
+  font-size: 14px;
+}
+
+#userList {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+#userList li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.userDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
